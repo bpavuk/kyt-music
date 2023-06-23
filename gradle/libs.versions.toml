@@ -1,0 +1,36 @@
+[versions]
+ktor = "2.3.1"
+kotlin = "1.8.10"
+kotlinxSerialization = "1.4.1"
+kotlinxCoroutines = "1.7.1"
+jsoup = "2.0.0"
+datetime = "0.4.0"
+
+kyt = "0.0.1-alpha11"
+
+[libraries]
+# kotlin
+kotlinPlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+# ktor
+ktorClient = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktorClient-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktorClient-plugins-Resources = { module = "io.ktor:ktor-client-resources", version.ref = "ktor" }
+ktorClient-plugins-ContentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktorClient-plugins-ContentNegotiation-Json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktorClient-plugins-ContentNegotiation-Xml = { module = "io.ktor:ktor-serialization-kotlinx-xml", version.ref = "ktor" }
+ktorClient-plugins-JSoup = { module = "com.tfowl.ktor:ktor-jsoup", version.ref = "jsoup" }
+ktorClient-plugins-ContentEncoding = { module = "io.ktor:ktor-client-encoding", version.ref = "ktor" }
+
+# serialization
+kotlinx-serialization-plugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+# coroutines
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+
+# date-time operations
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+
+[plugins]
+kotlinx-serialization-plugin = { id = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
