@@ -4,7 +4,7 @@ attributes:
     instanceType: regular
     editor:
       type: Idea
-      version: '2023.1'
+      version: '2023.2'
       updateChannel: Release
     warmup:
       # The warm-up will run on git push to the main branch
