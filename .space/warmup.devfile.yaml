@@ -20,5 +20,5 @@ attributes:
 components:
 - name: kyt-music-devenv
   container:
-    image: bpavuk.registry.jetbrains.space/p/main/container/dev-image:latest
+    image: bpavuk.registry.jetbrains.space/p/main/containers/myimage:latest
     
