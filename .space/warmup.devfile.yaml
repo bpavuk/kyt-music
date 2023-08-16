@@ -16,5 +16,4 @@ attributes:
           - 'refs/heads/main'
       script: |
         ./gradlew assemble
-        ./scripts/warmup.sh
         
